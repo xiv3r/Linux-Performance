@@ -1,2 +1,7 @@
-# Linux-Performance
-Linux Performance &amp; Optimization
+# Linux Performance Tweaks
+- cpu
+- ram
+- grub
+- initramfs
+- sysctl
+- tmpfs

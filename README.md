@@ -1,6 +1,12 @@
-# Linux Performance Tweaks
+<h1 align ="center">Linux Performance Tweaks</h1>
 
-## Auto install
+<h4 align="center">perf.sh is a linux shell script designed for CPU performance and enhance overall system responsiveness.</h4>
+
+# Tested Platforms:
+
+ - All Debian based Distros
+
+# Auto install
 
     sudo -i
 <br>

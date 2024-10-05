@@ -5,4 +5,4 @@
     sudo -i
 <br>
    
-    curl ; curl https://raw.githubusercontent.com/xiv3r/Linux-Performance/refs/heads/main/perf.sh | sudo sh
+    curl https://raw.githubusercontent.com/xiv3r/Linux-Performance/refs/heads/main/perf.sh | sudo sh

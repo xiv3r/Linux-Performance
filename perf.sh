@@ -1,9 +1,9 @@
-#!/bin/bash /etc/rc.local
+#!/bin/sh
 
 # Remove exit 0 from the top
 sed -i 's/exit 0//' /etc/rc.local
 
-ech "
+cat >>/etc/rc.local << EOF
 # CPU Power Max Performance
 echo performance | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 
@@ -12,11 +12,8 @@ cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq | tee /sys/devices/sys
 
 # Add exit 0 to the bottom
 exit 0
-" >> /etc/rc.local
+EOF
 
 #Make Executable
 chmod +x /etc/rc.local
 sh /etc/rc.local
-
-echo 'Done Installing into /etc/rc.local...'
-echo 'Require system reboot to apply the settings'

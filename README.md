@@ -8,4 +8,6 @@
 
 # Auto install
 ```sh
+sudo -i
 wget -qO- https://raw.githubusercontent.com/xiv3r/Linux-Performance/refs/heads/main/perf.sh | sudo sh
+```

@@ -1,4 +1,4 @@
-<h1 align ="center">Linux Performance Tweaks</h1>
+<h1 align ="center">Linux Performance Tuning for AI Workloads</h1>
 
 <h4 align="center">perf.sh is a linux shell script designed for CPU performance and enhance overall system responsiveness.</h4>
 

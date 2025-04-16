@@ -15,5 +15,5 @@ exit 0
 EOF
 
 #Make Executable
-chmod +x /etc/rc.local
+chmod 755 /etc/rc.local
 sh /etc/rc.local

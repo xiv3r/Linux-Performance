@@ -4,16 +4,15 @@
 sed -i 's/exit 0//' /etc/rc.local
 
 cat >>/etc/rc.local << EOF
-# CPU Power Max Performance
+# CPU Max Performance
 echo performance | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 
-# CPU Frequency Max Performance
+# Dynamically set Max CPU Frequencies 
 cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_min_freq
-
-# Add exit 0 to the bottom
 exit 0
 EOF
 
 #Make Executable
+systemctl enable rc-local
 chmod 755 /etc/rc.local
 sh /etc/rc.local

@@ -2,6 +2,7 @@
 
 # Over commit memory for max performance 
 cat >>/etc/sysctl.conf << EOF
+kernel.sched_child_runs_first=1
 vm.overcommit_memory=1
 vm.overcommit_ratio=90
 EOF
